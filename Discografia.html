@@ -62,8 +62,26 @@ article{
     }
 
 </style>
+<script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",500)
+}
+</script>
+<<meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0; text/html; charset=utf-8"/>
 </head>
-<body>
+<body onload="mueveReloj()">
+<form name="form_reloj">
+  <input type="text" name="reloj" size="15" style="background-color : #14a7a0; color : black; font-family : Verdana, Arial, Helvetica; font-size : 15pt; text-align : center; float:right">
+</form>
   <header>
   <h1>Mahmood</h1>
 </header>
@@ -72,7 +90,6 @@ article{
       <nav class="collapse navbar-collapse" id="main-doc" role="navigation">
         <ul class="nav navbar-nav navbar-right">
           <h2>Índice</h2>
-          <hr class="star-dark"/>
           <li><a href="Introduccion.html">Introducción</a><div></li>
           <hr class="star-dark"/>
           <li><a href="Discografia.html">Carrera</a><div></li>
@@ -92,11 +109,11 @@ article{
    <p>En 2012, audicionó para la <i>6ª temporada</i> de la <i>versión italiana</i> de <i>The X Factor</i>. Después de esto, trabajó en un bar y asistió a una escuela de música, estudiando piano, solfeo y teoría musical, que fue allí donde también comenzó a escribir canciones. En 2013, sacó su 1º single <i>Fallin' Rain</i>.</p>
    <p>En 2016 participó en la Sección de Recién Llegados del <i>Festival de la Canción de San Remo</i>, que cantó la canción <i>Dimentica</i>. En 2017 lanzó su sencillo <i>Pesos</i>, y con este sencillo participó en la 5ª edición del <i>Wind Summer Festival</i>, en el que ganó el 3º episodio de la sección Juvenil. En ese mismo año, apareció en el sencillo <i>Fabri Fibra</i>, <i>Luna</i>. En 2018, lanzó su primer extended play debut, <i>Gioventù bruciata</i>, y además, Marco Mengoni lanzó su 5º álbum, que cuenta con tres pistas coescritas por Mahmood.</p>
    <hr class="star-dark"/>
-   <h2>2019-presente: <i>Giuventù bruciata</i>, San remo y Eurovision</h2>
+   <h2>2019-presente: <i>Giuventú bruciata</i>, San remo y Eurovisión</h2>
    <hr class="star-dark"/>
-   <p>En diciembre de 2018, Mahmood fue uno de los 24 actos seleccionados para competir en Sanremo Giovani.​ Mahmood se ubicó en primer lugar en el segundo episodio del programa, con su entrada <i>Gioventù bruciata</i>, que también recibió el Premio de la Crítica entre los actos que se presentaron en la segunda final.​ <i>Soldi</i> se anunció más tarde como su entrada para el <i>Sanremo Music Festival 2019</i>.</p>
-   <p>Mahmood interpretó la canción por 1ª vez durante el 1º show en vivo del <i>69º Festival de la Canción de San Remo</i>, que se celebró el 5 de febrero de 2019.​ Dario «Dardust» Faini, coautor de la canción, dirigió la Orquesta de Sanremo durante su actuación.​ El 8 de febrero de 2019, Mahmood interpretó la canción en una nueva versión, con el rapero Gué Pequeno.​ Durante la 1ª ronda de la final, <i>Soldi</i> se ubicó en el 7º lugar en el voto de los televidentes, pero fue el más votado por el jurado de expertos y el 2º más votado por el jurado de prensa.​ Mahmood ganó un lugar en los tres primeros actos de la competencia y después de una actuación adicional, la canción fue declarada ganadora del Festival.​ Mahmood también recibió el premio <i>Enzo Jannacci</i> por Mejor Actuación.</p>
-   <p>El 22 de febrero de 2019, Mahmood lanzó su álbum de estudio debut, Gioventù bruciata, que encabezó la lista de álbumes italianos. En abril de 2019, Mahmood apareció en el sencillo Calipso de Charlie Charles y Dardust, que ha encabezado la lista de singles italianos. En mayo de 2019, representó a Italia en el Festival de la Canción de Eurovisión 2019 en Tel Aviv, Israel con la canción Soldi. Quedó segundo en la final realizada el 18 de mayo de ese año.</p>​
+   <p>En diciembre de 2018, Mahmood fue uno de los 24 actos seleccionados para competir en Sanremo Giovani.​ Mahmood se ubicó en primer lugar en el segundo episodio del programa, con su entrada <i>Gioventú bruciata</i>, que también recibió el Premio de la Crítica entre los actos que se presentaron en la segunda final.​ <i>Soldi</i> se anunció más tarde como su entrada para el <i>Sanremo Music Festival 2019</i>.</p>
+   <p>Mahmood interpretó la canción por 1ª vez durante el 1º show en vivo del <i>69º Festival de la Canción de San Remo</i>, que se celebró el 5 de febrero de 2019.​ Dario «Dardust» Faini, coautor de la canción, dirigió la Orquesta de Sanremo durante su actuación.​ El 8 de febrero de 2019, Mahmood interpretó la canción en una nueva versión, con el rapero Gué Pequeno.​ Durante la 1ª ronda de la final, <i>Soldi</i>se ubicó en el 7º lugar en el voto de los televidentes, pero fue el más votado por el jurado de expertos y el 2º más votado por el jurado de prensa.​ Mahmood ganó un lugar en los tres primeros actos de la competencia y después de una actuación adicional, la canción fue declarada ganadora del Festival.​ Mahmood tambiín recibió el premio <i>Enzo Jannacci</i> por Mejor Actuación.</p>
+   <p>El 22 de febrero de 2019, Mahmood lanzó su álbum de estudio debut, Gioventú bruciata, que encabezó la lista de álbumes italianos. En abril de 2019, Mahmood apareció en el sencillo Calipso de Charlie Charles y Dardust, que ha encabezado la lista de singles italianos. En mayo de 2019, representó a Italia en el Festival de la Canción de Eurovisión 2019 en Tel Aviv, Israel con la canción Soldi. Quedó segundo en la final realizada el 18 de mayo de ese año.</p>​
    <a href="https://www.wikiwand.com/es/Mahmood#/2012%E2%80%932018:_X_Factor_y_comienzos">Pulse aquí para más información.</a>
  </article>
 </section>

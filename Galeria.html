@@ -77,9 +77,26 @@
   }
 
   </style>
+  <script language="JavaScript">
+  function mueveReloj(){
+      momentoActual = new Date()
+      hora = momentoActual.getHours()
+      minuto = momentoActual.getMinutes()
+      segundo = momentoActual.getSeconds()
 
+      horaImprimible = hora + " : " + minuto + " : " + segundo
+
+      document.form_reloj.reloj.value = horaImprimible
+
+      setTimeout("mueveReloj()",500)
+  }
+  </script>
+<meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0; text/html; charset=utf-8"/>
   </head>
-  <body>
+  <body onload="mueveReloj()">
+  <form name="form_reloj">
+    <input type="text" name="reloj" size="15" style="background-color : #dca7a0; color : black; font-family : Verdana, Arial, Helvetica; font-size : 15pt; text-align : center; float:right">
+  </form>
     <header>
     <h1>Mahmood</h1>
   </header>
@@ -100,7 +117,7 @@
         </nav>
     </header>
     <article>
-      <marquee  scrolldelay="100" scrollamount="6" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()"><img title="imagen1" alt="imagen1" src="https://drive.google.com/uc?export=view&id=1LcWBmtM8Aj8GpbFyuEAUxI8Dyyf6HXKr" height ="330px" width="600px"/><img title="imagen2" alt="imagen2"  src="imagen2.jpg" height ="330px" width="520px" /><img title="imagen3" alt="imagen3"  src="imagen3.jpg" height ="330px" width="510px" /><img title="imagen4" alt="imagen4" src="imagen4.jpg" height ="330px" width="600px"/><img title="imagen5" alt="imagen5"  src="imagen5.jpg" height ="330px" width="400px" /></marquee>
+      <marquee  scrolldelay="100" scrollamount="6" direction="left" loop="infinite" onmouseout="this.start()" onmouseover="this.stop()"><img title="imagen1" alt="imagen1" src="imagen1.jpg" height ="330px" width="600px"/><img title="imagen2" alt="imagen2"  src="imagen2.jpg" height ="330px" width="520px" /><img title="imagen3" alt="imagen3"  src="imagen3.jpg" height ="330px" width="510px" /><img title="imagen4" alt="imagen4" src="imagen4.jpg" height ="330px" width="600px"/><img title="imagen5" alt="imagen5"  src="imagen5.jpg" height ="330px" width="400px" /></marquee>
   </article>
   <footer>
     <p>@Mahmood</p>

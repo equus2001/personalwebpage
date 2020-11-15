@@ -67,7 +67,7 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid black;
   text-align: left;
   padding: 8px;
 }
@@ -77,8 +77,26 @@ tr:nth-child(even) {
 }
 
 </style>
+<script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",500)
+}
+</script>
+<meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0; text/html; charset=utf-8"/>
 </head>
-<body>
+<body onload="mueveReloj()">
+<form name="form_reloj">
+  <input type="text" name="reloj" size="15" style="background-color : #bf6347; color : black; font-family : Verdana, Arial, Helvetica; font-size : 15pt; text-align : center; float:right">
+</form>
   <header>
   <h1>Mahmood</h1>
 </header>
@@ -108,11 +126,11 @@ tr:nth-child(even) {
      <th><h2>Soldi</h2></th>
      <th><h2>Barrio</h2></th>
     </tr>
-      <td><video width="400" height="320" controls>
+      <td><video width="100%" controls>
           <source src="videoplayback_Trim.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video></td>
-      <td><video width="400" height="320" controls>
+      <td><video width="100%" controls>
           <source src="videoplayback2_Trim.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video></td>
@@ -122,11 +140,11 @@ tr:nth-child(even) {
         <th><h2>Rapide</h2></th>
         <th><h2>Gioventù Bruciata</h2></th>
        </tr>
-      <td><video width="400" height="320" controls>
+      <td><video width="100%" controls>
           <source src="videoplayback3_Trim.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video></td>
-      <td><video width="400" height="320" controls>
+      <td><video width="100%" controls>
           <source src="videoplayback4_Trim.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video></td>

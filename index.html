@@ -63,13 +63,26 @@ article{
     }
 
 </style>
-<script>
-  function Ver_Hora() {
-    var mihora = new Date();
-  }
+<script language="JavaScript">
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+
+    horaImprimible = hora + " : " + minuto + " : " + segundo
+
+    document.form_reloj.reloj.value = horaImprimible
+
+    setTimeout("mueveReloj()",500)
+}
 </script>
+<meta http-equiv="Content-Type" content="width=device-width, initial-scale=1.0; text/html; charset=utf-8"/>
 </head>
-<body>
+<body onload="mueveReloj()">
+  <form name="form_reloj">
+    <input type="text" name="reloj" size="15" style="background-color : #3cb371; color : black; font-family : Verdana, Arial, Helvetica; font-size : 15pt; text-align : center; float:right">
+  </form>
   <header>
   <h1>Mahmood</h1>
   </header>
@@ -78,7 +91,6 @@ article{
       <nav class="collapse navbar-collapse" id="main-doc" role="navigation">
         <ul class="nav navbar-nav navbar-right">
           <h2>Índice</h2>
-          <hr class="star-dark"/>
           <li><a href="Introduccion.html">Introducción</a><div></li>
           <hr class="star-dark"/>
           <li><a href="Discografia.html">Carrera</a><div></li>
@@ -89,6 +101,7 @@ article{
         </ul>
       </nav>
   </header>
+
   <article>
    <hr class="star-dark"/>
    <h1>Introducción</h1>

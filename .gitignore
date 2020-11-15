@@ -3,3 +3,6 @@
 !README.md
 !.gitignore
 !*.html
+!docker
+!*.sh
+!Dockerfile
